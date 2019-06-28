@@ -7,5 +7,5 @@ for %%I in ("WebStorm", "IntelliJ", "CLion", "Rider") do (
 )
 
 REM Delete registry key and jetbrains folder (not sure if needet but however)
-rmdir /s /q "%USERPROFILE%\AppData\Roaming\JetBrains"
+rmdir /s /q "%APPDATA%\JetBrains"
 reg delete "HKEY_CURRENT_USER\Software\JavaSoft" /f
