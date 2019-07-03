@@ -1,5 +1,5 @@
 REM Delete eval folder with licence key and options.xml which contains a reference to it
-for %%I in ("WebStorm", "IntelliJ", "CLion", "Rider") do (
+for %%I in ("WebStorm", "IntelliJ", "CLion", "Rider", "GoLand") do (
     for /d %%a in ("%USERPROFILE%\.%%I*") do (
         rd /s /q "%%a/config/eval"
         del /q "%%a\config\options\other.xml"
